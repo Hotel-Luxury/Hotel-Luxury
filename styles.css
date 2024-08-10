@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1{font-size: 3em; color: #00215E; font-family: Rajdhani; font-weight: 400;}
+h2{font-size: 2em; color: #00215E; font-family: Rajdhani; font-weight: 500;}
+h3{font-size: 2em; color: #00215E; font-family: Rajdhani; font-weight: 500;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+
+html{
+    scroll-behavior: smooth;
+
+
+}
+.body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: black;
+}
+
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+    font-family: Rajdhani;
+    padding: 10px 20px;
+    border-radius: 2px;
+    border: none;
+    color: white;
+    background-color: #00215E;
+   
+}
+
+
+button:hover{
+    background-color: #FC4100 ;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+header{
+
+
+    background-color: white;
+   
+}
+
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    opacity: none;
+    width: 17%;
+   
+}
+
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+
+header a:hover{
+    color: #FC4100;
+}
+
+
+#hero{
+    min-height: 100vh;
+    position: relative;  
+}
+
+
+#hero .promo img{
+   opacity: 50%;
+}
+
+
+video{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+
+
+}
+
+
+.eslogan{
+    color: white;
+}
+
+
+.promo{
+    padding-top: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative ;
+    z-index: 2;
+}
+
+
+#somos-luxury .container{
+   
+    text-align: center;
+    padding: 40px 12px;
+}
+
+
+#nuestros-servicios{
+    text-align: center;
+    gap: 100px;
+   
+}
+
+
+#nuestros-servicios .container{
+    padding: 30px 0px;
+}
+
+
+#nuestros-servicios p{
+    display: none
+}
+
+
+#nuestros-servicios .carta{
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    margin: 12px;
+    border-radius: 15px;  
+}
+
+
+#nuestros-servicios .carta h3{
+    color: white;
+}
+
+#nuestros-servicios .carta p{
+    color: white;
+}
+
+
+hr{
+    height: 3px;
+    background-color: #948979;
+    width: 80%;
+    margin: auto;
+   
+}
+
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;  
+    gap: 20px;
+    border-radius: 15px;
+}
+
+
+.carta:first-child{
+   
+    background-image: url(./images/8755.jpg) ;
+}
+
+
+.carta:nth-child(2){
+    background-image: url(./images/breakfast-5204352_1280.jpg) ;
+}
+
+.carta:nth-child(3){
+    background-image: url(./images/305094777.jpg) ;
+}
+
+.carta:nth-child(4){
+    background-image: url(./images/fitness-centre.jpg) ;
+}
+
+.carta:nth-child(5){
+    background-image: url(./images/spa-malaga-cabecera-movil.jpg) ;
+}
+
+.carta:nth-child(6){
+    background-image: url(./images/baño--turco.jpg) ;
+}
+
+#habitaciones .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 20px 12px;
+    width: 75vw;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;  
+}
+
+
+#habitaciones .container img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px rgb(15, 15, 15, .5);
+}
+
+
+.title-galeria {
+    text-align: center;
+    padding: 20px 12px;
+    width: 75vw;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+}
+
+#galeria .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#galeria .container img {
+    width: calc(20% - 10px); 
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.684);
+    transition: all 0.5s ease-in-out;
+}
+
+#galeria .container img:hover {
+    width: calc(25% - 10px); 
+}
+
+@media (max-width: 600px) {
+    #galeria .container img {
+        width: calc(50% - 10px); 
+    }
+
+    #galeria .container img:hover {
+        width: calc(60% - 10px); 
+    }
+}
+
+
+#contacto {
+    background-color: #f8f8f8; 
+    padding: 40px 20px;
+    text-align: center; 
+}
+
+#contacto .container {
+    max-width: 800px; 
+    margin: auto; 
+}
+
+#contacto h2 {
+    font-size: 2.5em;
+    color: #00215E;
+    margin-bottom: 25px; 
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    color: black; 
+    margin-bottom: 20px; 
+    line-height: 1.6; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 500px; 
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    font-size: 1em; 
+}
+
+form textarea {
+    height: 150px; 
+    resize: vertical; 
+}
+
+form button {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #00215E; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+#enlaces{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+
+#enlaces .experiencia{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+#enlaces .info-hotel{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+footer
+{
+    text-align: center;
+    padding: 20px 12px;
+    background-color: #00215E;
+    color: white;
+}
+
+
+footer h3{
+    color: white;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    gap: 10px;  
+}
+
+
+form input{
+    width: 250px;
+    height: 30px;
+   
+}
+
+
+form textarea{
+    width: 250px;
+    height: 100px;
+   
+}
+
+
+@media (min-width: 720px){
+
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+
+
+    #somos-luxury .container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    #somos-luxury .texto{
+        text-align: center;
+        font-size: 18px;
+        width: 50%;
+        padding: 30px;
+       
+    }
+
+
+    #somos-luxury .title{
+        font-size: 20px;
+    }
+
+
+       
+    #nuestros-servicios p{
+        display: block;
+        color: white;
+    }
+
+
+    .carta{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+    }
+
+
+    .carta button{
+        width: 100px;
+        margin: auto;
+       
+    }
+
+
+    #enlaces{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+       
+    }
+
+
+    #enlaces h4{
+        font-size: 20px;
+    }
+
+
+
+
+    .copyright{
+        font-size: 20px;
+        margin-top: 50px;
+        text-align: right;
+        margin-right: 60px;
+       
+    }
+
+
+    .experiencia a{
+        color: white;
+    }
+   
+}
